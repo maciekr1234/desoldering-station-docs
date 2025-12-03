@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Desoldering Station Blog</title>
+        <link>https://maciekr1234.github.io/desoldering-station-docs/blog</link>
+        <description>Desoldering Station Blog</description>
+        <lastBuildDate>Wed, 03 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome to Desoldering Station Docs]]></title>
+            <link>https://maciekr1234.github.io/desoldering-station-docs/blog/welcome</link>
+            <guid>https://maciekr1234.github.io/desoldering-station-docs/blog/welcome</guid>
+            <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the official documentation site for the Desoldering Station Firmware project.]]></description>
+            <content:encoded><![CDATA[<p>This is the official documentation site for the <strong>Desoldering Station Firmware</strong> project.</p>
+<p>Here you'll find:</p>
+<ul>
+<li class=""><strong>Architecture overview</strong> - System design and data flow</li>
+<li class=""><strong>Driver documentation</strong> - ADC, PWM, PID, temperature sensors</li>
+<li class=""><strong>Controller guides</strong> - Heater and pump management</li>
+<li class=""><strong>GUI documentation</strong> - LVGL interface components</li>
+<li class=""><strong>API reference</strong> - Function and class documentation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/welcome#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<p>Check out the <a class="" href="https://maciekr1234.github.io/desoldering-station-docs/docs/intro">Introduction</a> to get started with the firmware.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-code">Source Code<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/welcome#source-code" class="hash-link" aria-label="Direct link to Source Code" title="Direct link to Source Code" translate="no">​</a></h2>
+<p>The firmware source code is available on <a href="https://github.com/maciekr1234/desoldering-station" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>]]></content:encoded>
+            <category>announcement</category>
+        </item>
+    </channel>
+</rss>

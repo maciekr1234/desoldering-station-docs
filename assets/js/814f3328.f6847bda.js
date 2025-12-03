@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocs_site=globalThis.webpackChunkdocs_site||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Desoldering Station Docs","permalink":"/desoldering-station-docs/blog/welcome","unlisted":false,"date":"2025-12-03T00:00:00.000Z"}]}')}}]);
