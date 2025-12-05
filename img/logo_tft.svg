@@ -1,0 +1,56 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9F1C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E63946;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4B5563;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simple background circle -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#2EC4B6" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Temperature arc (thicker for visibility) -->
+  <path d="M 16 32 A 16 16 0 0 1 32 16" stroke="#FF9F1C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 32 16 A 16 16 0 0 1 48 32" stroke="#E63946" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Desoldering gun (bold and clear) -->
+  <g transform="translate(32, 32) rotate(-20)">
+    <!-- Nozzle with glow -->
+    <circle cx="16" cy="0" r="4" fill="#FFD700" opacity="0.6"/>
+    <circle cx="16" cy="0" r="2.5" fill="#FFD700"/>
+    <rect x="8" y="-2.5" width="10" height="5" rx="1" fill="url(#heat)"/>
+    
+    <!-- Body (thicker) -->
+    <rect x="-2" y="-3.5" width="10" height="7" rx="1.5" fill="url(#body)"/>
+    
+    <!-- Trigger guard (simplified) -->
+    <path d="M -2 3 Q -5 6, -5 10 Q -5 12, -3 12 L -1 12" fill="none" stroke="url(#grip)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Trigger (more visible) -->
+    <rect x="-4" y="5" width="2" height="3" rx="0.5" fill="#E63946"/>
+    
+    <!-- Handle (bold) -->
+    <path d="M -2 3 L -7 6 Q -10 10, -10 16 Q -10 18, -8 18 L -4 18 Q -2 18, -2 16 L -2 10" fill="url(#grip)"/>
+    
+    <!-- Grip texture (clear lines) -->
+    <line x1="-8" y1="12" x2="-5" y2="12" stroke="#1F2937" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-8" y1="15" x2="-5" y2="15" stroke="#1F2937" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Heat waves (bold) -->
+    <path d="M 18 -4 Q 20 -5, 18 -6" stroke="#FF6B35" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 20 0 Q 22 0, 20 -1" stroke="#FFD700" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 18 4 Q 20 5, 18 6" stroke="#FF6B35" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  
+  <!-- Circuit nodes (larger for TFT) -->
+  <circle cx="32" cy="8" r="2" fill="#20A4F3" opacity="0.7"/>
+  <circle cx="56" cy="32" r="2" fill="#2EC4B6" opacity="0.7"/>
+</svg>
