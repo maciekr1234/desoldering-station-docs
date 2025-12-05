@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdocs_site=globalThis.webpackChunkdocs_site||[]).push([[8976],{354:s=>{s.exports=JSON.parse('{"tags":[{"label":"announcement","permalink":"/desoldering-station-docs/blog/tags/announcement","count":1}]}')}}]);
