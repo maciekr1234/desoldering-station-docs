@@ -2,11 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maciekr1234.github.io/desoldering-station-docs/blog</id>
     <title>Desoldering Station Blog</title>
-    <updated>2025-12-03T00:00:00.000Z</updated>
+    <updated>2025-12-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maciekr1234.github.io/desoldering-station-docs/blog"/>
     <subtitle>Desoldering Station Blog</subtitle>
     <icon>https://maciekr1234.github.io/desoldering-station-docs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Release 0.1.0]]></title>
+        <id>https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0</id>
+        <link href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0"/>
+        <updated>2025-12-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the release of version 0.1.0!]]></summary>
+        <content type="html"><![CDATA[<p>We are excited to announce the release of version 0.1.0!</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">Features<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features" translate="no">​</a></h2>
+<ul>
+<li class="">Enable logging in LVGL configuration, update build version, and enhance ADC task creation error handling</li>
+<li class="">Update heater and pump settings, enhance configuration schema, and refactor related components</li>
+<li class="">Enhance heater settings and add settings menu functionality</li>
+<li class="">Implement temperature display widget</li>
+<li class="">Add ADC driver and temperature sensor classes</li>
+<li class="">Enhance LVGL integration and add logging functionality</li>
+<li class="">Add fan control functionality with configurable temperature curves</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bug-fixes">Bug Fixes<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes" translate="no">​</a></h2>
+<ul>
+<li class="">Remove redundant note about version bumps in git commit guidelines</li>
+<li class="">Add 'pid-calibration' to the sidebar for improved documentation navigation</li>
+<li class="">Clarify overshoot description in PID calibration guide</li>
+<li class="">Change publish branch from main to master in documentation workflow</li>
+<li class="">Fix various bugs with screen logic and ADC driver crashes</li>
+<li class="">Fix empty deprecated tag causing Doxygen plugin crash</li>
+<li class="">Fix msgbox creation and API compatibility with LVGL 9.4</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="documentation">Documentation<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#documentation" class="hash-link" aria-label="Direct link to Documentation" title="Direct link to Documentation" translate="no">​</a></h2>
+<ul>
+<li class="">Release v0.1.0 with complete documentation versioning</li>
+<li class="">Add Docusaurus documentation site with versioned releases</li>
+<li class="">Add comprehensive architecture documentation with diagrams</li>
+<li class="">Add PID calibration guide with tuning methodology</li>
+<li class="">Add auto-tuning guide for automatic PID parameter discovery</li>
+<li class="">Add contributing guidelines and versioning strategy</li>
+<li class="">Add API reference auto-generated from Doxygen comments</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="controllers--drivers">Controllers &amp; Drivers<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#controllers--drivers" class="hash-link" aria-label="Direct link to Controllers &amp; Drivers" title="Direct link to Controllers &amp; Drivers" translate="no">​</a></h2>
+<ul>
+<li class="">Add HeaterController with PID temperature control and state machine</li>
+<li class="">Add PumpController for flux management</li>
+<li class="">Add ADC driver with FreeRTOS mutex protection and DMA support</li>
+<li class="">Add temperature sensor interface with multi-point calibration</li>
+<li class="">Add encoder input handling and temperature setpoint adjustment</li>
+<li class="">Add motion sensor for iron detection</li>
+<li class="">Add fan controller with configurable speed curves</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ui--settings">UI &amp; Settings<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#ui--settings" class="hash-link" aria-label="Direct link to UI &amp; Settings" title="Direct link to UI &amp; Settings" translate="no">​</a></h2>
+<ul>
+<li class="">Add temperature display widget with real-time updates</li>
+<li class="">Implement settings menu with persistent LittleFS storage</li>
+<li class="">Add temperature calibration wizard (multi-step process)</li>
+<li class="">Add PID tuning interface with real-time feedback</li>
+<li class="">Add settings menu functionality with subpages</li>
+<li class="">Add lv_settings_numeric widget with floating-point support</li>
+<li class="">Add lv_settings_select widget with observer binding</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="infrastructure">Infrastructure<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#infrastructure" class="hash-link" aria-label="Direct link to Infrastructure" title="Direct link to Infrastructure" translate="no">​</a></h2>
+<ul>
+<li class="">Add Doxygen integration for API documentation generation</li>
+<li class="">Add GitHub Pages documentation workflow</li>
+<li class="">Add automated sidebar generation for documentation</li>
+<li class="">Add event callback system to HeaterController</li>
+<li class="">Add PID auto-tuner and soft landing features</li>
+<li class="">Enhance LVGL integration with proper memory management</li>
+<li class="">Refactor error handling API (lv_error_*)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chores">Chores<a href="https://maciekr1234.github.io/desoldering-station-docs/blog/release-0.1.0#chores" class="hash-link" aria-label="Direct link to Chores" title="Direct link to Chores" translate="no">​</a></h2>
+<ul>
+<li class="">Remove pre-commit hook and update documentation</li>
+<li class="">Remove LVGL subproject reference from repository</li>
+<li class="">Update .gitignore to ensure lvgl library folder is ignored</li>
+<li class="">Remove unused color format setting</li>
+<li class="">Update version to 0.1.0</li>
+</ul>
+<hr>
+<p>Thank you to all contributors!</p>
+<p><a href="https://github.com/maciekr1234/desoldering-station/releases/tag/v0.1.0" target="_blank" rel="noopener noreferrer" class="">Full Changelog</a></p>
+<p>See commits between releases for details.</p>]]></content>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome to Desoldering Station Docs]]></title>
         <id>https://maciekr1234.github.io/desoldering-station-docs/blog/welcome</id>
